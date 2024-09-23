@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Launchpad Philly: LiftOff</title>
+    <link href="app.css" rel="stylesheet" type="text/css" />
+   
+
+  </head>
+
+   <img
+    src="https://i0.wp.com/launchpadphilly.org/wp-content/uploads/2022/07/03-more-transp-launchpad-logo-less-padding-copy-4.png?fit=500%2C443&ssl=1"
+    alt="lp-small-logo"
+  />
+  <body>
+    <!-- Launchpad Program App   -->
+    <main>
+      <h1>Learning HTML/CSS & JavaScript</h1>
+      <hr />
+
+      <p >
+        The web foundation is built on top of
+        <strong><i>HTML, CSS and JavaScript</i></strong
+        >.
+      </p>
+      
+      <section>
+        <aside class="card title">Foundations</aside>
+        <aside class="card title">Launchpad 101</aside>
+        <aside class="card title">Liftoff </aside>
+      </section>
+
+      <!-- HTML Table   -->
+      <table>
+        <!-- First Column Program Names -->
+        <tr>
+          <th>Program</th>
+          <th>Duration</th>
+          <th>Earning Potential</th>
+        </tr>
+
+        <!-- Second Column Duration -->
+        <tr>
+          <td><span>&#128708;</span> Foundations</td>
+          <td>10</td>
+          <td>1,500$</td>
+        </tr>
+
+        <!-- Third Column Earning Potential -->
+        <tr>
+          <td><span>&#128690;</span> Launchpad 101</td>
+          <td>20</td>
+          <td>3,000$</td>
+        </tr>
+
+        <!-- Fourth row -->
+
+        <tr>
+          <td><span>&#128747;</span>Liftoff</td>
+          <td>30</td>
+          <td>12,000$</td>
+        </tr>
+      </table>
+      <section>
+        <br />
+
+        <!-- Part 1: Add a new program to the table  -->
+
+        <!--Part 2: wrap a form element around the new program update () -->
+        <form class="new-program-form">
+          <label for="program">Program:</label>
+          <input type="text" id="program" name="program" />
+          <label for="duration">Duration:</label>
+          <input type="text" id="duration" name="duration" />
+          <label for="earnings">Potential Earnings:</label>
+          <input type="text" id="earnings" name="earnings" />
+          <!-- <input type="submit" value="Add New Program" /> -->
+          <button class="program-btn">Add New Program</button>
+        </form>
+      </section>
+
+      <!-- Part1: Module 4 Calculate the total earnings  -->
+      <!-- Part 2: Wrapp a form element around the calculator  -->
+      <aside>
+        <h2>Launchpad Total Earning Calculator</h2>
+
+        <form class="calcu-form grid-frame">
+          <label for="foundations">Foundations </label>
+          <input type="number" id="lp-fds" name="foundations" />
+
+          <label for="Launchpad101">Launchpad 101: </label>
+          <input type="number" id="lp-101" name="Launchpad101" />
+
+          <label for="Liftoff">Liftoff: </label>
+          <input type="number" id="liftoff" name="liftoff" />
+
+          <button id="calcu-earnings-btn" class="calcu-btn" >Calculate</button>
+          <button id="test" class="calcu-btn" onclick="initValues();" >test event</button>
+
+          <aside class="total-earnings">
+            <span id="result" class="result">$0</span>
+          </aside>
+
+          <!-- <p id="result"></p> -->
+        </form>
+      </aside>
+
+
+    </main>
+    <hr />
+    <footer>
+      <p>&copy; 2024 Launchpad Philly. All Rights Reserved.</p>
+      <p><a href="sign-up-form.html">Sign up for our news letter</a></p>
+      <p><a href="contact-us-form.html">Contact Us</a></p>
+    </footer>
+
+    <script src="calculateEarnings.js"></script>
+
+    <script>
+        /*    call functions in the global scope   */
+        initValues();
+
+    </script>
+  </body>
+</html>
