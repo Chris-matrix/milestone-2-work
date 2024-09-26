@@ -1,0 +1,39 @@
+* {
+    /* color: white;  */
+    font-size: 19px; 
+}
+.chat-area{
+    border: 2px solid; 
+    border-radius: 5%;
+}
+
+body {
+    margin: 2em auto;
+    font:
+      0.9em/1.2 Arial,
+      Helvetica,
+      sans-serif;
+    padding: 5%; 
+  }
+  
+  .chat-container {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-auto-rows: 100px;
+    gap: 20px;
+  }
+
+  .chat-container > section {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207 232 220);
+    border: 2px solid rgb(79 185 227);
+  }
+      
+.bottom, .top {
+    grid-column: 1 / span 3;
+}
+
+.last-col{
+    grid-row: 2 / span 3;
+}
