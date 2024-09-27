@@ -1,5 +1,0 @@
-function funky(){
-    console.log()
-    \
-
-}
